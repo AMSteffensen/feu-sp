@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Polar Interactive</title>
-    <meta name="description" content="Polar Interactive Science Museum for kids - School Semester Project"/>
+    <meta name="description" content="Polar Interactive Science Museum for kids - School Semester Project" />
 
     <!-- Stylesheets, inlcuding custom fonts, go here -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,700i|Ubuntu:400,700" rel="stylesheet">
@@ -19,23 +19,43 @@
 
     <header class="masthead">
         <div class="site-branding">
-            <h1 class="site-title"><a href="index.html">Polar Interactive</a></h1>
-        </div><!-- .site-title -->
+            <h1 class="site-title">
+                <a href="index.html">Polar Interactive</a>
+            </h1>
+        </div>
+        <!-- .site-title -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <!-- Mobile menu toggle button -->
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-            <!-- Main Menu -->
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="nav-menu">
-                    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item current-menu-item"><a href="explore.html">Explore</a></li>
-                    <li class="menu-item current-menu-item"><a href="support.html">Support</a></li>
-                    <li class="menu-item current-menu-item"><a href="visit.html">Visit</a></li>
-                    <li class="menu-item"><a target="_blank" href="#">External Link</a></li>
-            </ul></div>
+                    <li class="menu-item current-menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="visit.html">Visit</a>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="explore.html">Explore</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="about.html">About the museum</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="exhibitions.html">Exhibitions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="support.html">Support</a>
+                            <li class="menu-item">
+                                <a target="_blank" href="#">External link</a>
+                            </li>
+                </ul>
+            </div>
         </nav>
-    </header><!-- .masthead -->
-
+    </header>
+    <!-- .masthead -->
+    
     <div class="content">
         <main class="main-area">
             <article>

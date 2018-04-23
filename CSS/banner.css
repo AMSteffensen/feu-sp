@@ -1,0 +1,14 @@
+/*
+Banner styles
+*/
+.banner-heading {
+    font-family: 'Ubuntu', serif;
+    font-style: italic;
+    font-size: 2.4em;
+}
+
+.banner-text {
+    background: hsla(197, 54%, 64%, .8);
+    padding: 1.5em 2em;
+    margin: 0 -2em;
+}
