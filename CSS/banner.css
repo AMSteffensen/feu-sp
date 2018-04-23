@@ -1,14 +1,33 @@
 /*
 Banner styles
 */
+
+.banner {
+    background: url('../images/banner-image-small.jpg') ;
+    color:white;
+    height: 50%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
 .banner-heading {
     font-family: 'Ubuntu', serif;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 2.4em;
+
 }
 
 .banner-text {
-    background: hsla(197, 54%, 64%, .8);
-    padding: 1.5em 2em;
-    margin: 0 -2em;
+    margin: 0;
+    background: hsla(167, 34%, 26%, .8); 
+    /* margin: 0 -2em; */
+    color:white;
+    font-size: 1em;
 }
+
+h2.banner-text {
+    text-align: center;
+    padding: 0.5em;
+}
+
