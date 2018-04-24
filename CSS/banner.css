@@ -9,12 +9,14 @@ Banner styles
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 
 }
 .banner-heading {
     font-family: 'Ubuntu', serif;
     /* font-style: italic; */
     font-size: 2.4em;
+    height: 700px;
 
 }
 
