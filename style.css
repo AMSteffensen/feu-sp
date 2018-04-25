@@ -4,20 +4,13 @@ The primary stylesheet for PolarInteractive. This sheet pulls in all the compone
 
 @import url('CSS/reset.css');
 @import url('CSS/accessibility.css');
-@import url('CSS/layout.css'); 
+@import url('CSS/layout.css');  
 @import url('CSS/typography.css');
 @import url('CSS/masthead.css');
 @import url('CSS/navigation.css');
 @import url('CSS/images.css');
 @import url('CSS/banner.css');
-@import url('CSS/boxes.css')
 
-/* Base Styles */
-body {
-    line-height: 1.5;
-    padding: 2em 0em;
-    color: #555;
-  }
 
 h1,
 h2,
@@ -27,15 +20,68 @@ strong {
 }
 
 
-/* Link styles */
-a {
-    color: #E54661;
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.5;
+    padding: 2em 0em;
+    color: #555;
+    margin: 0 auto;
   }
 
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@supports (display: grid) {
+    main {
+        max-width: 1000px;
+        margin: 0;
+    }
+    article {
+        margin: 0;
+    }
+    .deals {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+    }
+
+
+/* Exhibitions */
+.boxes {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5rem 1rem;
 }
 
+.box {
+    display: flex;
+    flex-flow: column;
+
+}
+
+img {
+    order: -1;
+}
+
+
+/* News articles */
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1 rem;
+}
+
+
+.news-item {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.news-item > img {
+    order: -1;
+    align-self: center;
+}
+}
