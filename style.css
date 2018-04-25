@@ -4,10 +4,38 @@ The primary stylesheet for PolarInteractive. This sheet pulls in all the compone
 
 @import url('CSS/reset.css');
 @import url('CSS/accessibility.css');
-@import url('CSS/layout.css');
+@import url('CSS/layout.css'); 
 @import url('CSS/typography.css');
 @import url('CSS/masthead.css');
 @import url('CSS/navigation.css');
 @import url('CSS/images.css');
 @import url('CSS/banner.css');
+@import url('CSS/boxes.css')
+
+/* Base Styles */
+body {
+    line-height: 1.5;
+    padding: 2em 0em;
+    color: #555;
+  }
+
+h1,
+h2,
+h3,
+strong {
+  color: #333;
+}
+
+
+/* Link styles */
+a {
+    color: #E54661;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 

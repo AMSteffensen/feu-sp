@@ -10,13 +10,12 @@ Banner styles
     background-size: cover;
     background-position: center;
     
-
 }
 .banner-heading {
-    font-family: 'Ubuntu', serif;
     /* font-style: italic; */
     font-size: 2.4em;
     height: 700px;
+   
 
 }
 
@@ -26,6 +25,7 @@ Banner styles
     /* margin: 0 -2em; */
     color:white;
     font-size: 1em;
+    text-align: center;
 }
 
 h2.banner-text {

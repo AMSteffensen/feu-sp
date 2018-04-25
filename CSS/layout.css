@@ -4,8 +4,14 @@ Layouts
 
 body {
     background: hsl(0, 0%, 90%);
+    margin: 0 auto;
+    max-width: 50em;
+    
+
 }
 
 .content {
     padding: 2em;
 }
+
+
