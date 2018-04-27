@@ -39,6 +39,9 @@ h5,
 h6 {
 	font-family: 'Ubuntu', sans-serif;
 	clear: both;
+  	color: #333;
+}
+
 }
 
 p {

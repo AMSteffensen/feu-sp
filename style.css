@@ -1,87 +1,157 @@
-/*
-The primary stylesheet for PolarInteractive. This sheet pulls in all the components in order of appearance.
-*/
+/* Core Styles */
 
-@import url('CSS/reset.css');
-@import url('CSS/accessibility.css');
-@import url('CSS/layout.css');  
-@import url('CSS/typography.css');
-@import url('CSS/masthead.css');
-@import url('CSS/navigation.css');
-@import url('CSS/images.css');
-@import url('CSS/banner.css');
-
-
-h1,
-h2,
-h3,
-strong {
-  color: #333;
-}
-
-
-/* Base Styles */
-* {
-    box-sizing: border-box;
-}
 body {
-    line-height: 1.5;
-    padding: 2em 0em;
-    color: #555;
-    margin: 0 auto;
-  }
-
-
-@supports (display: grid) {
-    main {
-        max-width: 1000px;
-        margin: 0;
-    }
-    article {
-        margin: 0;
-    }
-    .deals {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
-    }
-
-
-/* Exhibitions */
-.boxes {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0.5rem 1rem;
-}
-
-.box {
-    display: flex;
-    flex-flow: column;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #333;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
 
 }
 
 img {
-    order: -1;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3 {
+	margin:0;
+	padding: 1em 0;
+}
+
+p {
+	margin:0;
+	padding: 1em 0;
+}
+
+.btn {
+	display: inline-block;
+	background: #333;
+	color:  #fff;
+	text-decoration: none;
+	padding: 1em 2em;
+	border: 1px solid #e54661;
+	margin: .5em 0;
+}
+
+.btn:hover {
+	background: #eaeaea;
+	color:#333;
+}
+
+/* Header Showcase */
+
+#showcase {
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .bg-image {
+	position: absolute;
+	background: #333 url('../images/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.3;
+}
+
+#showcase h1 {
+	padding-top: 100px;
+	padding-bottom:0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+	padding: 0 1.5em;
 }
 
 
-/* News articles */
-.news {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1 rem;
+/* Section A */
+
+#section-a {
+	background: #eaeaea;
+	color: #333;
+	padding-bottom: 2em;
+}
+
+/* Section B */
+
+#section-b {
+	padding: 2em 1em 1em;
+}
+
+#section-b ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#section-b li {
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+
+.card-content {
+	padding: 1.5em;
+}
+
+/* Section C*/
+
+#section-c {
+	background: #fff;
+	color: #333;
+	padding: 2em;
+}
+
+/* Section D */
+
+#section-d .box {
+	padding: 2em;
+	color: #fff;
+}
+
+#section-d .box:first-child {
+	background: #002d61;
+}
+
+#section-d .box {
+	background: #333353;
+}
+
+/* Footer */
+
+#main-footer {
+	padding: 2em;
+	background: #2c2c4b;
+	color: white;
+	text-align: center;
+}
+
+#main-footer a {
+	color: white;
+	text-decoration: none;
 }
 
 
-.news-item {
-    display: flex;
-    flex-flow: column;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 2rem;
-}
+/* Media Queries */
 
-.news-item > img {
-    order: -1;
-    align-self: center;
-}
+@media(min-width: 700px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.content-wrap, 
+	#section-b ul {
+		grid-column: 2/4;
+
+	}
 }
