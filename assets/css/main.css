@@ -15,18 +15,56 @@ font-family: 'Open Sans', sans-serif;
 
 @import url("accessibility.css");
 @import url("layout.css");
-@import url("typography.css");
-@import url("reset.css");
 @import url("header.css");
 @import url("navigation.css");
+
+/*--------------------------------------------------------------
+Reset
+--------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 /*--------------------------------------------------------------
 General styling
 --------------------------------------------------------------*/
 
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5px;
+  /* Higher quality font rendering - https://css-tricks.com/almanac/properties/t/text-rendering/ */
+  text-rendering: optimizeLegibility;
+}
 body {
-  background: #333;
+  background-color: #333;
   color: #fff;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
 }
 
 img {
@@ -97,8 +135,6 @@ Section C
 /*--------------------------------------------------------------
 Section D
 --------------------------------------------------------------*/
-
-
 
 #section-d .box {
   padding: 2em;
