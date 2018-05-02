@@ -1,0 +1,52 @@
+
+nav {
+  position: absolute;
+  z-index: 100;
+
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li {
+  border-bottom: 1px solid #dd;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: wrap;
+}
+
+#nav a {
+  color: #fff;
+}
+
+#nav a:visited {
+  color: #fff;
+}
+#nav a:hover {
+  text-decoration: underline;
+}
+
+#nav a:active {
+  text-decoration: underline;
+}
+
+.logo-box {
+  position: static;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  width: 85px;
+  height: 35px;
+}

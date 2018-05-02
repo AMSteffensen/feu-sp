@@ -1,5 +1,4 @@
 
-
 /*--------------------------------------------------------------
 Accessibility - Code Morten Rand-Hendriksen*/
 --------------------------------------------------------------*/ 
@@ -10,6 +9,7 @@ Accessibility - Code Morten Rand-Hendriksen*/
   height: 1px;
   width: 1px;
   overflow: hidden;
+  
 }
 
 .screen-reader-text:hover,
