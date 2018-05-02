@@ -9,6 +9,7 @@ Header showcase
     text-align: center;
   }
 
+
   #showcase .bg-image {
     position: absolute;
     background: #333 url("../../images/hero.jpg");
@@ -22,18 +23,18 @@ Header showcase
   }
   
   #showcase h1 {
-    padding-top: 50vh;
+    padding-top: 65px; 
     padding-bottom: 0;
   }
+
+ 
+
   
   #showcase .content-wrap,
   #section-a .content-wrap {
     padding: 0 1.5em;
   }
  
-  
-  
-
   .text-box {
     position: absolute;
     top: 30%;
