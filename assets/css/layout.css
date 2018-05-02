@@ -48,12 +48,7 @@ Layouts
       padding-top: 0;
     }
   
-    #main-footer {
-      padding: 2em;
-      background: #2c2c4b;
-      color: white;
-    }
-  
+
     #main-footer {
       display: grid;
       margin: 0 auto;

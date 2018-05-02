@@ -1,7 +1,10 @@
 
 /*--------------------------------------------------------------
 Accessibility - Code Morten Rand-Hendriksen*/
---------------------------------------------------------------*/ 
+a.screen-reader-text {
+  color: #333333;
+}
+
 /* Text meant only for screen readers - */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
