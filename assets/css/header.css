@@ -6,7 +6,6 @@ Header showcase
  #showcase {
     min-height: 75vh;
     color: #fff;
-    text-align: center;
   }
 
 
@@ -27,9 +26,6 @@ Header showcase
     padding-bottom: 0;
   }
 
- 
-
-  
   #showcase .content-wrap,
   #section-a .content-wrap {
     padding: 0 1.5em;
@@ -62,7 +58,7 @@ Header showcase
     animation-timing-function: ease-out;
 }
 
-  /* Media Queries */
+  /* Media Queries for header */
   @media (max-width: 500px) {
     .heading-primary-main {
 
@@ -86,7 +82,9 @@ Header showcase
     animation: moveInRight 1s ease-out;
 }
 
-
+/*--------------------------------------------------------------
+Header Animations
+--------------------------------------------------------------*/
 @keyframes moveInLeft {
     /* Beginning state */
     0% {
@@ -138,6 +136,7 @@ Header showcase
     }
 }
 
+/* ----- BUTTONS -----*/
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
