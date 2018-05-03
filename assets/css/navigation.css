@@ -47,3 +47,45 @@ nav ul {
 #nav a:active {
   text-decoration: underline;
 }
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#visit-menu-element {
+  color: black;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .navigation li {
+    font-size: 0px;
+  }
+  
+  i.fa {
+    font-size: initial;
+    font-size: 25px;
+  }
+  
+}
+
+
