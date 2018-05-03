@@ -27,16 +27,6 @@ Reset
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 /*--------------------------------------------------------------
 General styling
 --------------------------------------------------------------*/
@@ -179,6 +169,7 @@ Footer
 
 #main-footer ul {
   padding: 2em;
+  list-style: none;
   
 }
 
