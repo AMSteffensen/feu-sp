@@ -1,7 +1,8 @@
 
 #showcase .bg-image {
   position: absolute;
-  background: #333 url("../../images/exhibition-large.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/exhibition-large.jpg");
+  /* background: #333 url("../../images/exhibition-large.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

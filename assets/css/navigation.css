@@ -3,52 +3,36 @@
     position: relative; z-index: 1000;
   }
  */
-/* -----  LOGO ----  */
-.logo-box {
-  top: 40px;
-  left: 40px;
-  text-align: center;
-}
-
-.logo {
-  display: inline;
-  width: 85px;
-  height: 35px;
-  margin: 5px;
-}
 
 /* -----  NAVIGATION ----  */
-nav ul li {
-  display: inline;
-  padding: 25px;
+
+.main-nav {
+	float: right;
+	list-style: none;
+  margin-top: 55px;
 }
 
-nav ul {
-  padding: 25px;
-  text-align: center;
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
 }
 
-.navigation ul li a {
-  width: 100%;
+.navigation li a:link,
+.navigation li a:visited {
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transform: border-bottom 0.2s;
 }
 
-.navigation {
-  top: 60px;
-}
 
-#nav a {
-  color: #fff;
-}
-
-#nav a:visited {
-  color: #fff;
-}
-#nav a:hover {
-  text-decoration: underline;
-}
-
-#nav a:active {
-  text-decoration: underline;
+.navigation li a:hover,
+.nnavigation li a:active {
+  text-decoration: none;
+	border-bottom: 2px solid #21759b;
 }
 
 @media only screen and (max-width: 600px) {
