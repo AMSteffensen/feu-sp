@@ -6,7 +6,9 @@ Base color:
 
 Shades:
 #21759b
-#333333
+#1EAEDB Active
+#0FA0CE Hover
+#333333 Background
 
 TYPOGRAPHY:
 300,300i,400,400i,600,600i,700,700i,800,800i
@@ -17,6 +19,7 @@ font-family: 'Open Sans', sans-serif;
 @import url("layout.css");
 @import url("header.css");
 @import url("navigation.css");
+
 
 /*--------------------------------------------------------------
 Reset
@@ -35,22 +38,33 @@ html {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  line-height: 1.5px;
+  line-height: 1.4;
   /* Higher quality font rendering - https://css-tricks.com/almanac/properties/t/text-rendering/ */
   text-rendering: optimizeLegibility;
 }
 
+
 body {
   background-color: #333;
   color: #fff;
-  
 }
+
+  
+/* ------ IMAGES ------- */
 
 img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+
+/* ------ LINKS ------- */
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
 
 /* ------ HEADINGS ------- */
 h1,
@@ -101,6 +115,11 @@ h2:after {
   line-height: 145%;
 }
 
+/* Lists - make some margin between the lists elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+li {
+  margin-bottom: 1rem; 
+}
 
 /*--------------------------------------------------------------
 Section A - Explore
@@ -182,4 +201,19 @@ Footer
 
 .copyright {
   text-align: center;
+} padding: 2em;
+  list-style: none;
+  
 }
+
+#main-footer {
+  padding: 2em;
+  background: #012034;
+  color: white;
+
+}
+
+.copyright {
+  text-align: center;
+}
+
