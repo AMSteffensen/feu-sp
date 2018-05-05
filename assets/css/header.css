@@ -36,7 +36,7 @@ header {
 #showcase .bg-image {
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../../images/hero.jpg");
+    url("images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
