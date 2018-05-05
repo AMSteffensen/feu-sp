@@ -1,6 +1,7 @@
 $(document).ready(function()  {
 
 
+    /* /*http://imakewebthings.com/waypoints/api/waypoint/*/
     $('.js--section-features').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
@@ -11,14 +12,5 @@ $(document).ready(function()  {
         offset: '58px;'
     });
 
-    /*
-
-        var waypoints = $('#handler-first').waypoint(function(direction) {
-            notify(this.element.id + ' hit 25% from top of window') 
-        }, {
-            offset: '25%'
-        })
-  
-*/  
 
 });
