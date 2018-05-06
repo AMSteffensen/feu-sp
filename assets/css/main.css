@@ -66,6 +66,112 @@ a:hover {
   color: #0FA0CE; }
 
 
+
+
+/* ----- BUTTONS -----*/
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+/* Make button fade out only when it is active */
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+/* Media Queries - buttons  */
+@media (max-width: 500px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+	display: inline-block;
+	padding: 5px 30px;
+	font-weight: 300;
+	text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+.btn-ghost:link,
+.btn-ghost:visited,
+input[type=submit] {
+	border: 1px solid #1EAEDB;
+	color: #fff;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top:50px;
+}
+
+.btn-full{
+  background-color: #21759b;
+}
+
+.btn-full:hover,
+.btn-full:active
+{
+  background-color: #0FA0CE;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  background-color: #333333;
+	border: 1px solid #0FA0CE;
+	color: #0FA0CE;
+}
+
+
 /* ------ HEADINGS ------- */
 h1,
 h2,
@@ -178,19 +284,16 @@ Section D
 #section-d .box:first-child {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/hero.jpg");
+    url("images/support.jpg");
     background-attachment: fixed;
 }
 
 #section-d .box {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/hero.jpg");
-  
+    url("images/visit.jpg");
   background-attachment: fixed;
-  
 }
-
 
 /*--------------------------------------------------------------
 Section E
@@ -199,13 +302,41 @@ Section E
   background: #fff;
   color: #333;
   padding: 2em;
+  width: auto;
 }
 
+.lastest-news ul {
+ text-align: center;
+  list-style: none;
+}
 
+.opening-hours ul {
+  text-align: center;
+  list-style: none;
+}
 
+.contact-info ul {
+  text-align: center;
+  list-style: none;
+  
+}
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
 
+.col {
+  flex: 1;
+}
 
+@media only screen and (max-width: 700px)  {
+
+  .flex {
+    flex-direction: column;
+  }
+
+}
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
@@ -213,7 +344,6 @@ Footer
 footer {
 	background-color: #333;
 	padding: 50px;
-  font-size: 80%;
 }
 
 .footer-nav {
@@ -221,9 +351,14 @@ footer {
   float:left;
 }
 
+/* Select first ul list and make font size smaler */
+ul.footer-nav:first-child {
+  font-size: 50%;
+}
+
 .social-links {
 	list-style: none;
-	float: right;
+  float: right;
 }
 
 .footer-nav li,
