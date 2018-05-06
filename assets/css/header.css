@@ -8,31 +8,6 @@ header {
   
 }
 
-/*  #showcase {
-    min-height: 75vh; 
-    height: 100vh;
-    color: #fff;
-  } */
-
-/* .logo {
-  height: 100px;
-  width: auto;
-  float: left;
-  margin-top: 20px;
-}
-
-.logo-box {
-  top: 40px;
-  left: 40px;
-}
- */
-.logo {
-  display: inline;
-  width: 85px;
-  height: 35px;
-  margin: 5px;
-}
-
 #showcase .bg-image {
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),

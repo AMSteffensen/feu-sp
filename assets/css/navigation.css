@@ -72,3 +72,19 @@
 
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
+
+.logo {
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+	padding:20px;
+}
+
+.logo-black { 
+	display: none;
+	height: 50px;
+	width: auto;
+	float: left;
+	margin-top: 5px 0;  
+}
