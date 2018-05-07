@@ -8,7 +8,8 @@ Shades:
 #21759b
 #1EAEDB Active
 #0FA0CE Hover
-#333333 Background
+#add8e6 Background
+
 
 TYPOGRAPHY:
 300,300i,400,400i,600,600i,700,700i,800,800i
@@ -345,14 +346,37 @@ Section E
 Footer
 --------------------------------------------------------------*/
 
-footer {
+.footer {
 	background-color: #333;
-	padding: 50px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  list-style: none;
+  
+  
 }
 
 .footer-nav {
-	list-style: none;
-  float:left;
+  flex: 50%; 
+}
+.social-links ul {
+  flex: 50%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    text-align: center;
+    align-items: center;
+  }
+  
+}
+
+.footer p {
+	color: #888;
+	text-align: center;
+	margin-top: 20px;
 }
 
 /* Select first ul list and make font size smaler */
@@ -360,6 +384,8 @@ ul.footer-nav:first-child {
   font-size: 50%;
 }
 
+
+/* FOOTER SOCIAL LINKS */
 .social-links {
 	list-style: none;
   float: right;
@@ -418,11 +444,9 @@ ul.footer-nav:first-child {
 }
 
 
-footer p {
-	color: #888;
-	text-align: center;
-	margin-top: 20px;
-}
+
+
+
 
 
 
