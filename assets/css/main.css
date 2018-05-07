@@ -90,12 +90,16 @@ a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
-  background-color: #fff;
-  color: #333;
+.btn-cta {
+  background-color: #1EAEDB;
+  color: #fff;
 }
 
-.btn::after {
+.btn-cta:hover {
+  color: #fff;
+}
+
+/* .btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -110,16 +114,16 @@ a:hover {
 
 .btn-white::after {
   background-color: #fff;
-}
+} */
 
 /* Make button fade out only when it is active */
-.btn:hover::after {
+/* .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-}
+} */
 
 .btn-animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom 0.5s ease-out 0.1s;
   animation-fill-mode: backwards;
 }
 
@@ -422,23 +426,4 @@ footer p {
 
 
 
-/* #main-footer ul {
-  padding: 2em;
-  list-style: none;
-  
-} */
-
-/* #main-footer {
-  padding: 2em;
-  background: #eaeaea;
-  color: #333;
-
-} */
-
-/* .copyright {
-  text-align: center;
- padding: 2em;
-  list-style: none;
-}
-   */
 
