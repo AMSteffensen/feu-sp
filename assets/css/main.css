@@ -5,10 +5,9 @@ Base color:
 #012034
 
 Shades:
-#21759b
 #1EAEDB Active
 #0FA0CE Hover
-#add8e6 Background
+#333 Background
 
 
 TYPOGRAPHY:
@@ -29,6 +28,8 @@ Reset
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -67,9 +68,12 @@ a:hover {
   color: #0FA0CE; }
 
 
-
-
 /* ----- BUTTONS -----*/
+.btn-cta {
+  background-color: #1EAEDB;
+  color: #fff;
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -91,37 +95,9 @@ a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-cta {
-  background-color: #1EAEDB;
-  color: #fff;
-}
-
 .btn-cta:hover {
   color: #fff;
 }
-
-/* .btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.btn-white::after {
-  background-color: #fff;
-} */
-
-/* Make button fade out only when it is active */
-/* .btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-} */
 
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.1s;
@@ -159,8 +135,8 @@ input[type=submit] {
   margin-top:50px;
 }
 
-.btn-full{
-  background-color: #21759b;
+.btn-full {
+  background-color: #1EAEDB;
 }
 
 .btn-full:hover,
@@ -175,7 +151,6 @@ input[type=submit] {
 	border: 1px solid #0FA0CE;
 	color: #0FA0CE;
 }
-
 
 /* ------ HEADINGS ------- */
 h1,
@@ -226,6 +201,7 @@ h2:after {
   line-height: 145%;
 }
 
+
 /* Lists - make some margin between the lists elements
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 li {
@@ -264,12 +240,17 @@ Section B - Cards
 
 .card-content {
   padding: 1.5em;
+  color: #333;
+}
+
+.card:hover,
+.card:focus {
+  transform: translate(0.5px, 5px) rotate(3deg);
 }
 
 /*--------------------------------------------------------------
 Section C
 --------------------------------------------------------------*/
-
 #section-c {
   background: #fff;
   color: #333;
@@ -299,6 +280,7 @@ Section D
     url("images/visit.jpg");
   background-attachment: fixed;
 }
+
 
 /*--------------------------------------------------------------
 Section E
@@ -383,7 +365,6 @@ input[type=submit] {
  
 }
 
-
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
@@ -395,8 +376,6 @@ Footer
   flex-wrap: wrap;
   flex-direction: column; 
   list-style: none;
-  
-  
 }
 
 .footer-nav {
