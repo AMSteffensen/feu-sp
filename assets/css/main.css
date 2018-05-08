@@ -20,7 +20,6 @@ font-family: 'Open Sans', sans-serif;
 @import url("header.css");
 @import url("navigation.css");
 
-
 /*--------------------------------------------------------------
 Reset
 --------------------------------------------------------------*/
@@ -45,13 +44,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-
 body {
   background-color: #333;
   color: #fff;
 }
 
-  
 /* ------ IMAGES ------- */
 
 img {
@@ -60,17 +57,17 @@ img {
   height: auto;
 }
 
-
 /* ------ LINKS ------- */
 a {
-  color: #1EAEDB; }
+  color: #1eaedb;
+}
 a:hover {
-  color: #0FA0CE; }
-
+  color: #0fa0ce;
+}
 
 /* ----- BUTTONS -----*/
 .btn-cta {
-  background-color: #1EAEDB;
+  background-color: #1eaedb;
   color: #fff;
 }
 
@@ -113,11 +110,11 @@ a:hover {
 
 .btn:link,
 .btn:visited,
-input[type=submit] {
-	display: inline-block;
-	padding: 5px 30px;
-	font-weight: 300;
-	text-decoration: none;
+input[type="submit"] {
+  display: inline-block;
+  padding: 5px 30px;
+  font-weight: 300;
+  text-decoration: none;
   border-radius: 200px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
@@ -126,30 +123,29 @@ input[type=submit] {
 .btn-full:visited,
 .btn-ghost:link,
 .btn-ghost:visited,
-input[type=submit] {
-	border: 1px solid #1EAEDB;
-	color: #fff;
+input[type="submit"] {
+  border: 1px solid #1eaedb;
+  color: #fff;
   margin-right: 15px;
   display: flex;
   justify-content: center;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .btn-full {
-  background-color: #1EAEDB;
+  background-color: #1eaedb;
 }
 
 .btn-full:hover,
-.btn-full:active
-{
-  background-color: #0FA0CE;
+.btn-full:active {
+  background-color: #0fa0ce;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
   background-color: #333333;
-	border: 1px solid #0FA0CE;
-	color: #0FA0CE;
+  border: 1px solid #0fa0ce;
+  color: #0fa0ce;
 }
 
 /* ------ HEADINGS ------- */
@@ -159,53 +155,52 @@ h3 {
   margin: 0;
   padding: 1em 0;
   font-weight: 300;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h1 {
-	margin-top: 0;
-	margin-top: 0;
-	margin-bottom: 20px;
-	color: #fff;
-	font-size: 240%;
-	word-spacing: 4px;
-	letter-spacing: 1px;
+  margin-top: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 h2 {
-	font-size: 180%;
-	word-spacing: 2px;
-	text-align: center;
-	margin-bottom: 30px;
-	letter-spacing: 1px;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 h3 {
-	font-size: 110%;
-	margin-bottom: 15px;
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
 h2:after {
-	display: block;
-	height: 2px;
-	background-color: #21759b;
-	content: " ";
-	width: 100px;
-	margin: 0 auto;
-	margin-top: 30px;
+  display: block;
+  height: 2px;
+  background-color: #21759b;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 /* ------ PARAGRAPHS  ------- */
 .box p {
-	font-size: 90%;
+  font-size: 90%;
   line-height: 145%;
 }
-
 
 /* Lists - make some margin between the lists elements
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 li {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -264,23 +259,19 @@ Section D
 #section-d .box {
   padding: 2em;
   color: #fff;
-  
 }
 
 #section-d .box:first-child {
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("images/support.jpg");
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 #section-d .box {
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("images/visit.jpg");
   background-attachment: fixed;
 }
-
 
 /*--------------------------------------------------------------
 Section E
@@ -293,9 +284,8 @@ Section E
 }
 
 .lastest-news ul {
- text-align: center;
+  text-align: center;
   list-style: none;
-  
 }
 
 .opening-hours ul {
@@ -309,7 +299,7 @@ Section E
 }
 
 .contact-info i {
-  padding:5px;
+  padding: 5px;
 }
 .flex {
   display: flex;
@@ -320,12 +310,10 @@ Section E
   flex: 1;
 }
 
-@media only screen and (max-width: 700px)  {
-
+@media only screen and (max-width: 700px) {
   .flex {
     flex-direction: column;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -337,54 +325,50 @@ Section Form
 }
 
 .contact-form {
-	width: 60%;
+  width: 60%;
   margin: 0 auto;
   height: 500px;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
-	width: 100%;
-	padding: 7px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
 textarea {
-	height: 100px;
+  height: 100px;
 }
 
-input[tpye=checkbox] {
+input[tpye="checkbox"] {
   margin: 10px 5px 10px 0;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #1eaedb;
   color: #fff;
   margin: 5px 5px 10px 0;
- 
- 
 }
-
-
 
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
 
 .footer {
-	background-color: #333;
+  background-color: #333;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; 
+  flex-direction: column;
   list-style: none;
 }
 
 .footer-nav {
-  flex: 50%; 
+  flex: 50%;
 }
 .social-links ul {
   flex: 50%;
@@ -396,13 +380,12 @@ Footer
     text-align: center;
     align-items: center;
   }
-  
 }
 
 .footer p {
-	color: #888;
-	text-align: center;
-	margin-top: 20px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Select first ul list and make font size smaler */
@@ -410,70 +393,60 @@ ul.footer-nav:first-child {
   font-size: 50%;
 }
 
-
 /* FOOTER SOCIAL LINKS */
 .social-links {
-	list-style: none;
+  list-style: none;
   float: right;
 }
 
 .footer-nav li,
 .social-links li {
-	display: inline-block;
-	margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .footer-nav li:last-child,
 .social-links li:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
-	text-decoration: none;
-	border: 0;
-	color: #888;
-	transition: color 0.2s;
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-	color: #ddd;
+  color: #ddd;
 }
 
 .social-links li a:link,
 .social-links li a:visited {
-	font-size: 160%;
+  font-size: 160%;
 }
 
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
-	transition: color 0.2s;
+  transition: color 0.2s;
 }
 .ion-social-facebook:hover {
-	color: #3b5999;
+  color: #3b5999;
 }
 
 .ion-social-twitter:hover {
-	color: #55acee;
+  color: #55acee;
 }
 
 .ion-social-googleplus:hover {
-	color: #dd4b39;
+  color: #dd4b39;
 }
 .ion-social-instagram:hover {
-	color: #e4405f;
+  color: #e4405f;
 }
-
-
-
-
-
-
-
-
-

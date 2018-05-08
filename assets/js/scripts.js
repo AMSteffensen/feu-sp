@@ -1,6 +1,5 @@
 $(document).ready(function()  {
 
-
     /* /*http://imakewebthings.com/waypoints/api/waypoint/*/
     $('.js--section-features').waypoint(function(direction) {
         if (direction == "down") {
