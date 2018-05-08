@@ -295,6 +295,7 @@ Section E
 .lastest-news ul {
  text-align: center;
   list-style: none;
+  
 }
 
 .opening-hours ul {
@@ -305,9 +306,11 @@ Section E
 .contact-info ul {
   text-align: center;
   list-style: none;
-  
 }
 
+.contact-info i {
+  padding:5px;
+}
 .flex {
   display: flex;
   flex-direction: row;
@@ -364,6 +367,8 @@ input[type=submit] {
  
  
 }
+
+
 
 /*--------------------------------------------------------------
 Footer
