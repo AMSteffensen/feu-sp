@@ -30,15 +30,18 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <!-- Skip Navigation -->
-        <a class="skip-link screen-reader-text" href="#section-a">Skip to content</a>
-        <!-- Navigation -->
-        <nav id="nav" aria-label="main-navigation" class="navigation sticky">
-                <img src="assets/images/logo-white.png" alt="Polarius Logo" class="logo">
-                <img src="assets/images/logo-black.png" alt="Polarius Logo" class="logo-black">
-            <ul class="main-nav">
+<header>
+       <!-- Skip Navigation -->
+    <a class="skip-link screen-reader-text" href="#section-a">Skip to content</a>
+    <!-- Navigation -->
+    <div class="wrapper">
+        <nav id="nav" aria-label="main-navigation" class="site-nav navigation sticky">
+            <img src="assets/images/logo-white.png" alt="Polarius Logo" class="logo"> 
+            <img src="assets/images/logo-black.png" alt="Polarius Logo" class="logo-black"> 
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            <ul class="open desktop">
                 <li>
                     <a href="index.html">
                         <i class="fa fa-home"></i>Home</a>
@@ -56,7 +59,7 @@
                         <i class="fa fa-users"></i>Support</a>
                 </li>
                 <li>
-                    <a class="active" href="about.html">
+                    <a href="about.html">
                         <i class="fa fa-question-circle"></i>About</a>
                 </li>
                 <li>
@@ -65,15 +68,15 @@
                 </li>
             </ul>
         </nav>
-    </header>
-
+    </div>
+</header>
         <!-- Main Area -->
         <main id="main">
             <!-- Section A -->
             <section id="section-a" class="grid">
                 <div class="content-wrap">
-                    <h2 class="content-title">Explore</h2>
-                    <img src="assets/images/research.jpg" alt="researcher">
+                        <h2 class="content-title">Explore</h2>
+                        <img src="assets/images/research.jpg" alt="researcher">
                     <div class="content-text">
                         <article>
                             <h3>For kids</h3>
@@ -167,7 +170,7 @@
             <!-- Footer -->
         </footer>
 
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="vendors/js/jquery-3.3.1.min.js"></script>
         <script src="assets/js/scripts.js"></script>
     </body>
 

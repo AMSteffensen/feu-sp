@@ -30,43 +30,44 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <!-- Skip Navigation -->
+    <header>
         <a class="skip-link screen-reader-text" href="#section-a">Skip to content</a>
         <!-- Navigation -->
-
-        <nav id="nav" aria-label="main-navigation" class="navigation sticky">
+        <div class="wrapper">
+            <nav id="nav" aria-label="main-navigation" class="site-nav navigation sticky">
                 <img src="assets/images/logo-white.png" alt="Polarius Logo" class="logo">
                 <img src="assets/images/logo-black.png" alt="Polarius Logo" class="logo-black">
-            <ul class="main-nav">
-
-                <li>
-                    <a href="index.html">
-                        <i class="fa fa-home"></i>Home</a>
-                </li>
-                <li>
-                    <a class="active" href="exhibitions.html">
-                        <i class="fa fa-eye"></i>Exhibitions</a>
-                </li>
-                <li>
-                    <a href="visit.html">
-                        <i class="fa fa-map"></i>Visit</a>
-                </li>
-                <li>
-                    <a href="support.html">
-                        <i class="fa fa-users"></i>Support</a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <i class="fa fa-question-circle"></i>About</a>
-                </li>
-                <li>
-                    <a href="news.html">
-                        <i class="fa fa-comment"></i>News</a>
-                </li>
-            </ul>
-        </nav>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+                <ul class="open desktop">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="exhibitions.html">
+                            <i class="fa fa-eye"></i>Exhibitions</a>
+                    </li>
+                    <li>
+                        <a href="visit.html">
+                            <i class="fa fa-map"></i>Visit</a>
+                    </li>
+                    <li>
+                        <a href="support.html">
+                            <i class="fa fa-users"></i>Support</a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa fa-question-circle"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            <i class="fa fa-comment"></i>News</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Area -->
@@ -182,7 +183,7 @@
         <!-- Footer -->
     </footer>
 
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 

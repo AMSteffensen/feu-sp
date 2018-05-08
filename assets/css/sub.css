@@ -5,10 +5,27 @@ CSS for Sub pages
 header {
     height: 20vh;
     background-color: #eaeaea;
-}
+} 
 body {
     background-color: white;
 }
-  
+
+/* Change colors on subpages */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: rgb(0, 0, 0);
+}
 
 
+@media (min-width: 700px) {
+    .logo-black {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        display: none;
+    }
+}

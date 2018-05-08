@@ -15,10 +15,12 @@ TYPOGRAPHY:
 font-family: 'Open Sans', sans-serif;
 */
 
+
 @import url("accessibility.css");
+@import url("navigation.css");
 @import url("layout.css");
 @import url("header.css");
-@import url("navigation.css");
+
 
 /*--------------------------------------------------------------
 Reset
@@ -202,6 +204,41 @@ h2:after {
 li {
   margin-bottom: 1rem;
 }
+
+
+/* White logo mobiles*/
+.logo {
+	height: 50px;
+	width: 120px;
+	margin-top: 15px;
+}
+
+/* Desktop logo */
+@media only screen and (min-width: 700px) {
+  .logo {
+    width: 150px;
+    height: 70px; 
+    float: left;
+  }
+}
+
+/* Black LOGO Mobiles */
+.logo-black {
+	height: 50px;
+	width: 120px;
+	margin-top: 15px;
+}
+
+/* Black Desktop logo */
+@media only screen and (min-width: 700px) {
+  .logo-black{
+    width: 150px;
+    height: 70px; 
+    float: left;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 Section A - Explore

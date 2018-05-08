@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 News CSS
 --------------------------------------------------------------*/
+header {
+  height: 0vh;
+  background-color: #eaeaea;
+} 
+
+
 body {
   background-color: white;
   color: black;
@@ -22,4 +28,23 @@ body {
   .news-wrapper {
     flex-direction: column-reverse;
   }
+}
+
+@media (min-width: 700px) {
+  .logo-black {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* Change colors on subpages */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: rgb(0, 0, 0);
 }
