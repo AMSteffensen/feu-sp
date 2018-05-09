@@ -1,15 +1,15 @@
 /*--------------------------------------------------------------
 News CSS
 --------------------------------------------------------------*/
+
 header {
   height: 0vh;
   background-color: #eaeaea;
 } 
 
-
 body {
-  background-color: white;
-  color: black;
+  background-color: #eaeaea;
+    color: #333;
 }
 
 .news {

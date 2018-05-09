@@ -85,6 +85,7 @@ nav ul.opening {
 
 nav li {
   border-bottom: 1px solid #f6f4e2;
+  
 }
 nav li:last-child {
   border-bottom: none;
@@ -96,6 +97,10 @@ nav a {
 	padding: 1.5em 4em 1.5em 3em;
 	text-transform: uppercase;
 	text-decoration: none;
+  }
+
+  .fa {
+    padding: 10px;
   }
 
   nav a:hover,
