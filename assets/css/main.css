@@ -51,8 +51,12 @@ body {
   color: #fff;
 }
 
-/* ------ IMAGES ------- */
+/* Typography effects */
+h1,h2,h3 {
+  text-shadow: 1px 1px 2px #999;
+}
 
+/* ------ IMAGES ------- */
 img {
   display: block;
   width: 100%;
@@ -277,8 +281,9 @@ Section B - Cards
 
 .card:hover,
 .card:focus {
-  transform: translate(0.5px, 5px) rotate(3deg);
+  background-color: #0fa0ce;
 }
+
 
 /*--------------------------------------------------------------
 Section C
