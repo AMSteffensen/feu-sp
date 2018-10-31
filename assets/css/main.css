@@ -14,13 +14,37 @@ html {
 body {
   background-color: rgb(255,255,255);
   border: 3px solid rgb(75,75,75);
-  max-width: 760px;
+  max-width: 960px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   /* margin: 20px auto 0 auto; */
   padding: 15px;
   box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+  
+}
+
+/* LINKS */
+a:link { color: #F60; }
+a:visited { color: #900; }
+a:hover { color: #F33; }
+a:active {color: #B2F511; }
+a {
+  text-decoration: none; 
+} 
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+nav a { font-family: Arial, sans-serif; }
+nav a:link { color: #F60; }
+nav a:visited { color: #900; }
+nav a:hover { color: #F33; }
+nav a:active {color: #B2F511; }
+
+/* Navigation */
+ul.nav {
+  list-style-type: none;
 }
 
 h1 {
@@ -99,4 +123,3 @@ header {
       background-repeat: no-repeat;
       background-position: center center;
 }
-
