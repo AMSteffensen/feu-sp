@@ -1,10 +1,102 @@
-/*--------------------------------------------------------------
-Reset
---------------------------------------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
+@import url("reset.css");
+
+/* usefull selector that removes problems with box sizing */ 
+* { 
   box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
 }
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  background-color: rgb(253,248,171);
+}
+
+body {
+  background-color: rgb(255,255,255);
+  border: 3px solid rgb(75,75,75);
+  max-width: 760px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 20px auto 0 auto; */
+  padding: 15px;
+  box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+}
+
+h1 {
+  font-size: 2.75em;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(133,161,16);
+  text-transform: uppercase;
+  padding: 5px 15px 2px 15px;
+  margin: 0 -15px 20px -15px;
+}
+
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border: 4px solid white;
+}
+
+
+h1 {
+  color: rgb(249,212,120);
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  text-shadow: 4px 4px 6px rgba(0,0,0,.75);
+}
+
+h2 {
+  font: normal 3.5em "Slabo 27px", Garamond, Times, serif;
+  color: rgb(37,76,143);
+  border-bottom: 1px solid rgb(200,200,200);
+  margin-top: 25px;
+}
+
+h3 {
+  color: rgb(241,47,6);
+  font-size: 1.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-left: 150px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+/* try make this target only a couple of lines */ 
+main p::first-line {
+  font-weight: bold;
+  color: rgb(153,153,153);
+}
+
+
+.copyright {
+  color: red;
+  border: 4px solid white;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+
+/* Images */
+
+/*
+<img src="assets/images/logo-white.png" alt="Polarius Logo" class="logo"> */
+
+header {
+  background-image: url(images/hero.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+}
+
