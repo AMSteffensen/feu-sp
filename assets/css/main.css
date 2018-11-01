@@ -167,6 +167,36 @@ header {
 
 
 /* Layout */
-.section-a {
-  float: right;
+
+
+
+/* photo gallery */
+.photo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.photo figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #900;
+}
+
+.photo figcaption {
+  opacity: 0;
+  transition: opacitiy .5s ease-in;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.photo:hover figcaption {
+  display: block;
+  opacity: 1;
 }
