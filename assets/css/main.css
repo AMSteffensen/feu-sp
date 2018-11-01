@@ -44,7 +44,25 @@ nav a:active {color: #B2F511; }
 
 /* Navigation */
 ul.nav {
-  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+  border-bottom: 1px dashed #000;
+}
+
+.nav li {
+  display: inline;
+  margin-right: -5px;
+}
+
+.nav a {
+  display: inline-block;
+  border: 1px dashed #000;
+  border-bottom: none;
+  padding: 5px 15px 5px 15px;
+  background-color: #EAEAEA;
+  text-decoration: none;
+  color: #333;
 }
 
 h1 {
@@ -122,4 +140,33 @@ header {
   background-image: url(images/hero.jpg);
       background-repeat: no-repeat;
       background-position: center center;
+}
+
+
+
+
+
+/* Forms */
+.section-form label {
+  display: inline-block;
+  width: 20em;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Submit button */ 
+.section-form input[type="submit"]  {
+  margin-left: 50px;
+  padding: 10px 25px;
+  font-size: 1em;
+}
+
+
+
+
+/* Layout */
+.section-a {
+  float: right;
 }
