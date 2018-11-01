@@ -18,10 +18,148 @@
 </head>
 
 <body>
+
+    <div class="content">
+        <div class="main">
+            <!-- Main Area -->
+            <main>
+            <!-- Section A -->
+                <section class="section-a flex3">
+                    <h2 class="content-title">Explore together.</h2>      
+                        <article>
+                            <p>Come join us at the Community Science Museum where we’re committed to making science
+                                accessible to all.
+                                Over the course of human history, science has developed from our early understanding of
+                                fire, wind,
+                                water, and earth to exploring everything from galaxies far away to the very building blocks
+                                of life
+                                itself. The aim of our museum is to create a space where everyone can experience the
+                                wonders of our
+                                discoveries and perhaps even ignite a lifelong passion to continue the exploration of the
+                                world around
+                                us.</p>
+                        </article>
+            </section>
+    
+            <section class="flex3">
+                <figure class="photo">
+                    <img src="assets/css/images/evolution.jpg">
+                    <figcaption>A picture showing eveolution</figcaption>
+                </figure>
+                <figure class="photo">
+                    <img src="assets/css/images/biology.jpg">
+                    <figcaption>A picture showing eveolution</figcaption>
+                </figure>
+                <figure class="photo">
+                    <img src="assets/css/images/support.1.jpg">
+                    <figcaption>A picture showing eveolution</figcaption>
+                </figure>
+            </section>
+            <!-- Section B -->
+            <section class="section-b">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <a href="exhibitions.html">Exhibitions</a>
+                                <div class="card-content">
+                                    <h3 class="card-title">Exploring Science</h3>
+                                    <p>Are you a young person looking to learn more about science? Come on down to our
+                                        museum, there’s
+                                        plenty to see and do.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <a href="news.html">News</a>
+                                <!-- <img src="assets/images/explore-space.jpg" alt="Visit us"> -->
+                                <div class="card-content">
+                                    <h3 class="card-title">Special Events and Exhibition Spaces</h3>
+                                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’,
+                                        explores
+                                        the night sky and what we can see and know about the universe around us.</p>
+                                </div> 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <a href="about.html">About </a>
+                                <!-- <img src="assets/images/wall.jpg" alt="About Us"> -->
+                                <div class="card-content">
+                                    <h3 class="card-title">About Us</h3>
+                                    <p>We are a community driven center, learn more about what we do and how you can help!</p>
+                                </div> 
+                        </div>
+                    </li>
+                </ul>
+            </section>
+    
+            <!-- Section C -->
+            <section class="section-c">
+                    <h2 class="content-title">Explore the wonders of our cosmos.</h2>
+                        <article>
+                            <p>We believe science should not be confined to the textbook, but brought to live through
+                                exhibits. This
+                                is why we have over 1000 different exhibits on the many varied subjects of science to
+                                explore. Many
+                                of these exhibits are designed for you to interact with and play around to see science come
+                                to life
+                                (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone
+                                home).
+                            </p>
+                        </article>
+            </section>
+    
+            <!-- Section D -->
+            <section class="section-d">
+            
+                    <h2 class="content-title">Visit</h2>
+                    <p>We are located in Mo I Rana, a town just south of the Artic Circle in the Helgeland region of
+                        Nordland. Come
+                        visit us, learn and play and have fun - bring your friends family. </p>
+                    <a href="visit.html" class="btn btn-full">Visit us</a>
+              
+    
+              
+                    <h2 class="content-title">Support</h2>
+                    <p>There are various ways you can support the museum. Donations are very welcome and are an important
+                        way we
+                        keep this museum open and accessible to the whole community. </p>
+                    <a href="support.html" class="btn btn-ghost">Support us</a>
+             
+            </section>
+    
+            <!-- Section Form -->
+            <section class="section-form">
+                <h2>We're happy to hear from you</h2>
+                <form method="post" action="#" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                    <label for="find-us">How did you find us?</label>
+                    <select name="find-us" id="find-us">
+                        <option value="friends" selected>Friends</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisment</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="news">Newsletter</label>
+                    <input type="checkbox" name="news" id="news" checked> Yes, please
+                    <label>Drop us a line</label>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Send it!">
+                </form>
+            </section>
+    
+            </main>
+        </div>
+     
+    <div class="sidebar1">
     <!-- Skip Navigation -->
     <a class="skip-link screen-reader-text" href="#section-a">Skip to content</a>
     <!-- Navigation -->
-        <nav>
+        <nav class="flex-container">
             <!-- <img src="assets/images/logo-white.png" alt="Polarius Logo" class="logo"> -->
             <!-- <img src="assets/images/logo-black.png" alt="Polarius Logo" class="logo-black"> -->
             <ul class="nav">
@@ -35,9 +173,13 @@
             </ul>
         </nav>
     <!-- Header Showcase -->
-    <header class="banner">
-        <div class="bg-image"></div>
-        <div class="text-box">
+    <header>
+        <div class="banner">
+            <p class="logo">Polar Interactive</p>
+        </div>
+
+        <div class="flex1"></div>
+        <div class="flex2">
             <h1 class="heading-primary">
                 <span class="heading-primary-main">Explore</span>
                 <span class="heading-primary-sub">reaching for the stars</span>
@@ -45,174 +187,41 @@
             <a href="#section-a" class="btn btn-cta btn-animated">Discover our Exhibitions</a>
         </div>
     </header>
-
-    <!-- Main Area -->
-    <main>
-        <!-- Section A -->
-        <section class="section-a">
-                <h2 class="content-title">Explore together.</h2>      
-                    <article>
-                        <p>Come join us at the Community Science Museum where we’re committed to making science
-                            accessible to all.
-                            Over the course of human history, science has developed from our early understanding of
-                            fire, wind,
-                            water, and earth to exploring everything from galaxies far away to the very building blocks
-                            of life
-                            itself. The aim of our museum is to create a space where everyone can experience the
-                            wonders of our
-                            discoveries and perhaps even ignite a lifelong passion to continue the exploration of the
-                            world around
-                            us.</p>
-                    </article>
-        </section>
-
-        <section class="gallery">
-            <figure class="photo">
-                <img src="assets/css/images/evolution.jpg">
-                <figcaption>A picture showing eveolution</figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="assets/css/images/biology.jpg">
-                <figcaption>A picture showing eveolution</figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="assets/css/images/support.1.jpg">
-                <figcaption>A picture showing eveolution</figcaption>
-            </figure>
-        </section>
-        <!-- Section B -->
-        <section class="section-b">
-            <ul>
-                <li>
-                    <div class="card">
-                        <a href="exhibitions.html">
-                            <!-- <img src="assets/images/creativity.jpg" alt="Exploring Science"> -->
-                            <div class="image"></div>
-                            <div class="card-content">
-                                <h3 class="card-title">Exploring Science</h3>
-                                <p>Are you a young person looking to learn more about science? Come on down to our
-                                    museum, there’s
-                                    plenty to see and do.</p></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="news.html">
-                            <!-- <img src="assets/images/explore-space.jpg" alt="Visit us"> -->
-                            <div class="card-content">
-                                <h3 class="card-title">Special Events and Exhibition Spaces</h3>
-                                <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’,
-                                    explores
-                                    the night sky and what we can see and know about the universe around us.</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="about.html">
-                            <!-- <img src="assets/images/wall.jpg" alt="About Us"> -->
-                            <div class="card-content">
-                                <h3 class="card-title">About Us</h3>
-                                <p>We are a community driven center, learn more about what we do and how you can help!</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Section C -->
-        <section class="section-c">
-                <h2 class="content-title">Explore the wonders of our cosmos.</h2>
-                    <article>
-                        <p>We believe science should not be confined to the textbook, but brought to live through
-                            exhibits. This
-                            is why we have over 1000 different exhibits on the many varied subjects of science to
-                            explore. Many
-                            of these exhibits are designed for you to interact with and play around to see science come
-                            to life
-                            (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone
-                            home).
-                        </p>
-                    </article>
-        </section>
-
-        <!-- Section D -->
-        <section class="section-d">
-            <div class="box">
-                <h2 class="content-title">Visit</h2>
-                <p>We are located in Mo I Rana, a town just south of the Artic Circle in the Helgeland region of
-                    Nordland. Come
-                    visit us, learn and play and have fun - bring your friends family. </p>
-                <a href="visit.html" class="btn btn-full">Visit us</a>
-            </div>
-
-            <div class="box">
-                <h2 class="content-title">Support</h2>
-                <p>There are various ways you can support the museum. Donations are very welcome and are an important
-                    way we
-                    keep this museum open and accessible to the whole community. </p>
-                <a href="support.html" class="btn btn-ghost">Support us</a>
-            </div>
-        </section>
-
-        <section class="section-e">
-            
-                    <h2>Contact Info</h2>
-                    <ul><li><a href="tel:+123456789"><i class="ion-android-call"></i>12345678</a></li>
-                        <li><a href="mailto:post@example.com">
-                            <i class="ion-android-mail"></i>post@polarius.no</a>
-                        </li>
-                        <li><a href="#"><i class="ion-android-globe"></i>Nytorget 1. 8622, Mo i Rana</a></li>
-                    </ul>
-
-                    <h2>Lastest News</h2>
-                    <ul>
-                        <li><a href="news.html">Visiting Professor of Aeronautics</a></li>
-                        <li><a href="news2.html">Night in the Museum</a></li>
-                        <li><a href="news3.html">Energetica Exhibition on Loan</a></li>
-                    </ul>
+    </div>
     
-         
-                    <h2>Opening Hours</h2>
-                    <ul>
-                        <li>Monday - Closed</li>
-                        <li>Tuesday: 10 - 16:00</li>
-                        <li>Tuesday: 10 - 16:00</li>
-                        <li>Wednesday: 10 - 16:00</li>
-                        <li>Thursday: 10 - 16:00</li>
-                        <li>Friday: 10 - 19:00</li>
-                        <li>Sunday: 09:00 - 13:00</li>
-                    </ul>
-        </section>
+        <div class="sidebar2">
+                <section class="section-e">
+                
+                        <h2>Contact Info</h2>
+                        <ul><li><a href="tel:+123456789"><i class="ion-android-call"></i>12345678</a></li>
+                            <li><a href="mailto:post@example.com">
+                                <i class="ion-android-mail"></i>post@polarius.no</a>
+                            </li>
+                            <li><a href="#"><i class="ion-android-globe"></i>Nytorget 1. 8622, Mo i Rana</a></li>
+                        </ul>
+    
+                        <h2>Lastest News</h2>
+                        <ul>
+                            <li><a href="news.html">Visiting Professor of Aeronautics</a></li>
+                            <li><a href="news2.html">Night in the Museum</a></li>
+                            <li><a href="news3.html">Energetica Exhibition on Loan</a></li>
+                        </ul>
+        
+             
+                        <h2>Opening Hours</h2>
+                        <ul>
+                            <li>Monday - Closed</li>
+                            <li>Tuesday: 10 - 16:00</li>
+                            <li>Tuesday: 10 - 16:00</li>
+                            <li>Wednesday: 10 - 16:00</li>
+                            <li>Thursday: 10 - 16:00</li>
+                            <li>Friday: 10 - 19:00</li>
+                            <li>Sunday: 09:00 - 13:00</li>
+                        </ul>
+            </section>
+        </div>
+    </div>
 
-        <!-- Section Form -->
-        <section class="section-form">
-            <h2>We're happy to hear from you</h2>
-            <form method="post" action="#" class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
-                <label for="find-us">How did you find us?</label>
-                <select name="find-us" id="find-us">
-                    <option value="friends" selected>Friends</option>
-                    <option value="search">Search engine</option>
-                    <option value="ad">Advertisment</option>
-                    <option value="other">Other</option>
-                </select>
-                <label for="news">Newsletter</label>
-                <input type="checkbox" name="news" id="news" checked> Yes, please
-                <label>Drop us a line</label>
-                <textarea name="message" placeholder="Your message"></textarea>
-                <label>&nbsp;</label>
-                <input type="submit" value="Send it!">
-            </form>
-        </section>
-
-    </main>
-    <!-- Main content -->
 
     <!-- Footer -->
     <footer>
