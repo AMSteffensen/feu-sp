@@ -1,0 +1,25 @@
+/* --------------------------
+            LAYOUT
+--------------------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header  { order: 0; }
+.main    { order: 1; }
+.sidebar { order: 2; }
+.subnav  { order: 3; }
+.footer  { order: 4; }
+
+
+@media screen and (min-width:800px) {
+  .container {
+    display: block;
+  }
+  .article {
+    float: right;
+    width: 50%;
+  }
+}
